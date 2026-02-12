@@ -299,8 +299,11 @@
         }
     </style>
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Main CSS (Deferred - Critical CSS is inlined above) -->
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="style.css">
+    </noscript>
 
     <!-- Google Fonts (Optional Enhancement) -->
     <link rel="stylesheet"
