@@ -25,10 +25,9 @@
 
     <!-- Preload Critical Resources -->
     <link rel="preload" href="style.css" as="style">
-    <!-- Preload Font to reduce shift -->
-    <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
-        as="style">
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Critical CSS (Inlined for Performance) -->
     <style>
@@ -155,6 +154,7 @@
   .swiper-wrapper {
     display: flex;
     transition: transform 0.3s ease-in-out;
+    min-height: 825px;
   }
 
   /* Individual slide */
@@ -300,16 +300,13 @@
         }
     </style>
 
-    <!-- Defer Main CSS -->
-    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="style.css">
-    </noscript>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Async Fonts (Fixed with Preload) -->
+    <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
-        rel="stylesheet" media="print" onload="this.media='all'">
+        rel="stylesheet">
 
     <!-- Schema.org Markup -->
     <script type="application/ld+json">
@@ -457,13 +454,13 @@
 <div class="swiper" data-swiper="2">
 
     <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="sonic-dash-gameplay-screenshot-1.webp" alt="sonic-dash-gameplay-screenshot-1"></div>
-            <div class="swiper-slide"><img src="sonic-dash-gameplay-screenshot-2.webp" alt="sonic-dash-gameplay-screenshot-2" ></div>
-        <div class="swiper-slide"><img src="sonic-dash-gameplay-screenshot-3.webp" alt="sonic-dash-gameplay-screenshot-3"></div>
-        <div class="swiper-slide"><img src="sonic-dash-gameplay-screenshot-4.webp" alt="sonic-dash-gameplay-screenshot-4"></div>
-        <div class="swiper-slide"><img src="sonic-dash-gameplay-screenshot-5.webp" alt="sonic-dash-gameplay-screenshot-5"></div>
-        <div class="swiper-slide"><img src="sonic-dash-gameplay-screenshot-6.webp" alt="sonic-dash-gameplay-screenshot-6"></div>
-        <div class="swiper-slide"><img src="sonic-dash-gameplay-screenshot-7.webp" alt="sonic-dash-gameplay-screenshot-7"></div>
+        <div class="swiper-slide"><img src="sonic-dash-gameplay-screenshot-1.webp" alt="sonic-dash-gameplay-screenshot-1" width="360" height="825"></div>
+            <div class="swiper-slide"><img src="sonic-dash-gameplay-screenshot-2.webp" alt="sonic-dash-gameplay-screenshot-2" width="360" height="825"></div>
+        <div class="swiper-slide"><img src="sonic-dash-gameplay-screenshot-3.webp" alt="sonic-dash-gameplay-screenshot-3" width="360" height="825"></div>
+        <div class="swiper-slide"><img src="sonic-dash-gameplay-screenshot-4.webp" alt="sonic-dash-gameplay-screenshot-4" width="360" height="825"></div>
+        <div class="swiper-slide"><img src="sonic-dash-gameplay-screenshot-5.webp" alt="sonic-dash-gameplay-screenshot-5" width="360" height="825"></div>
+        <div class="swiper-slide"><img src="sonic-dash-gameplay-screenshot-6.webp" alt="sonic-dash-gameplay-screenshot-6" width="360" height="825"></div>
+        <div class="swiper-slide"><img src="sonic-dash-gameplay-screenshot-7.webp" alt="sonic-dash-gameplay-screenshot-7" width="360" height="825"></div>
 
     </div>
     <button class="swiper-button prev">&#10094;</button>
@@ -992,11 +989,11 @@
                 </div>
                 <div class="swiper" data-swiper="2">
     <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="enabling allow from this source option  screenshot 1.webp" alt="enabling allow from this source option screenshot 1"></div>
-        <div class="swiper-slide"><img src="enabling allow from this source option screenshot 2.webp" alt="enabling allow from this source option screenshot 2"></div>
-        <div class="swiper-slide"><img src="installing-sonic-dash-mod-apk-screenshot-1.webp" alt="installing sonic dash mod apk screenshot"></div>
-        <div class="swiper-slide"><img src="installing-sonic-dash-mod-apk-screenshot-2.webp" alt="installing sonic dash mod apk screenshot 1"></div>
-        <div class="swiper-slide"><img src="installing-sonic-dash-mod-apk-screenshot-3.webp" alt="installing sonic dash mod apk screenshot 2"></div>
+        <div class="swiper-slide"><img src="enabling allow from this source option  screenshot 1.webp" alt="enabling allow from this source option screenshot 1" width="360" height="825"></div>
+        <div class="swiper-slide"><img src="enabling allow from this source option screenshot 2.webp" alt="enabling allow from this source option screenshot 2" width="360" height="825"></div>
+        <div class="swiper-slide"><img src="installing-sonic-dash-mod-apk-screenshot-1.webp" alt="installing sonic dash mod apk screenshot" width="360" height="825"></div>
+        <div class="swiper-slide"><img src="installing-sonic-dash-mod-apk-screenshot-2.webp" alt="installing sonic dash mod apk screenshot 1" width="360" height="825"></div>
+        <div class="swiper-slide"><img src="installing-sonic-dash-mod-apk-screenshot-3.webp" alt="installing sonic dash mod apk screenshot 2" width="360" height="825"></div>
     </div>
     <button class="swiper-button prev">&#10094;</button>
     <button class="swiper-button next">&#10095;</button>
